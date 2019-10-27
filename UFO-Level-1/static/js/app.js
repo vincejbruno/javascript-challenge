@@ -34,5 +34,12 @@ button.on("click", function() {
       cell.text(value);
     });
   });
-
 });
+
+// Create clear button
+
+var clear_button = d3.select('#remove')
+clear_button.on('click', function() {
+    var tableBody = d3.select('tbody');
+    tableBody.html("");
+})
